@@ -1,12 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Logo from "../components/Logo";
 import Navigation from './../components/Navigation';
 
 const About = () => {
   return (
     <div>
         <Navigation />
+        <Logo />
       <h1>A propos</h1>
       <br />
       <p>
