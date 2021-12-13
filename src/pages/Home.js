@@ -4,7 +4,6 @@ import Countries from './../components/Countries';
 const Home = () => {
   return (
     <div className="home">
-      <Navigation />
       <Logo/>
       <Countries/>
       <h1>Accueil</h1>

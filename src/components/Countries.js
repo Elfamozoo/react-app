@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const countries = () => {
-  //   eslint-disable-next-line react-hooks/rules-of-hooks
+const Countries = () => {
+
   const [data, setData] = useState([]);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
       .get("https://restcountries.com/v2/all?fields=name,population,region,capital,flag")
@@ -25,4 +24,4 @@ const countries = () => {
   );
 };
 
-export default countries;
+export default Countries;
